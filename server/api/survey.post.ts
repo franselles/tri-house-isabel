@@ -23,7 +23,8 @@ function requiredNumber(value: unknown, field: string): number {
   ) {
     throw createError({
       statusCode: 400,
-      statusMessage: `El campo ${field} no es válido.`,
+      statusMessage: 'Error interno',
+      message: `El campo ${field} no es válido.`,
     })
   }
 
@@ -36,7 +37,8 @@ export default defineEventHandler(async (event) => {
   if (!body || typeof body !== 'object' || Array.isArray(body)) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'Los datos del formulario no son válidos.',
+      statusMessage: 'Error interno',
+      message: 'Los datos del formulario no son válidos.',
     })
   }
 
@@ -55,21 +57,24 @@ export default defineEventHandler(async (event) => {
   if (name.length > 150 || email.length > 254) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'El nombre o el email son demasiado largos.',
+      statusMessage: 'Error interno',      
+      message: 'El nombre o el email son demasiado largos.',
     })
   }
 
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'El email no tiene un formato válido.',
+      statusMessage: 'Error interno',      
+      message: 'El email no tiene un formato válido.',
     })
   }
 
   if (wantsUpdates && (!name || !email)) {
     throw createError({
       statusCode: 400,
-      statusMessage:
+      statusMessage: 'Error interno',
+      message:
         'Indica tu nombre y email si quieres recibir novedades.',
     })
   }
@@ -85,7 +90,8 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      statusMessage: 'El servicio de encuestas no está configurado.',
+      statusMessage: 'Error interno',
+      message: 'El servicio de encuestas no está configurado.',
     })
   }
 
@@ -135,7 +141,8 @@ export default defineEventHandler(async (event) => {
 
     throw createError({
       statusCode: 500,
-      statusMessage: 'No se ha podido guardar la encuesta. Inténtalo de nuevo.',
+      statusMessage: 'Error interno',
+      message: 'No se ha podido guardar la encuesta. Inténtalo de nuevo.',
     })
   }
 })
