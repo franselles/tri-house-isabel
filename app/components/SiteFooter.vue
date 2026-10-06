@@ -51,7 +51,7 @@ const legalLinks = [
       <!-- Pie inferior -->
       <div class="flex flex-col gap-3 text-xs leading-5 text-[#81796E] sm:flex-row sm:items-center sm:justify-between">
         <p>
-          © {{ currentYear }} Residencial Teclo. Todos los derechos reservados. v0.0.3
+          © {{ currentYear }} Residencial Teclo. Todos los derechos reservados. v0.0.4
         </p>
 
         <NuxtLink to="/" class="w-fit transition-colors hover:text-[#94784D]">
