@@ -2,7 +2,7 @@
 import { computed, reactive, ref } from 'vue'
 
 useSeoMeta({
-  title: 'Residencial Isabel | Encuesta de preferencias',
+  title: 'Residencial Teclo | Encuesta de preferencias',
   description:
     'Ayúdanos a conocer tus preferencias para un futuro proyecto residencial.',
 })
@@ -95,7 +95,7 @@ const amenities = [
       <!-- HERO -->
       <section id="inicio" class="relative isolate scroll-mt-4 overflow-hidden">
         <div aria-hidden="true"
-          class="absolute inset-0 -z-20 bg-[url('/images/residencial-isabel-hero.webp')] bg-cover bg-center" />
+          class="absolute inset-0 -z-20 bg-[url('/images/residencial-teclo-hero.webp')] bg-cover bg-center" />
         <div aria-hidden="true"
           class="absolute inset-0 -z-10 bg-gradient-to-r from-[#F5F2EC]/95 via-[#F5F2EC]/85 to-[#F5F2EC]/60" />
 
@@ -111,7 +111,7 @@ const amenities = [
             <h1 class="font-serif text-5xl leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
               Residencial
               <span class="mt-1 block italic text-[#94784D]">
-                Isabel
+                Teclo
               </span>
             </h1>
 
@@ -254,7 +254,7 @@ const amenities = [
                     <span class="mt-1 block text-xs leading-5 text-[#706B63]">
                       Opcional. Marca esta casilla si deseas que contactemos
                       contigo para enviarte información sobre la evolución
-                      de Residencial Isabel.
+                      de Residencial Teclo.
                     </span>
                   </span>
                 </label>
@@ -449,14 +449,14 @@ const amenities = [
       <!-- CIERRE -->
       <section class="relative isolate overflow-hidden">
         <div aria-hidden="true"
-          class="absolute inset-0 -z-20 bg-[url('/images/residencial-isabel-cierre.webp')] bg-cover bg-center" />
+          class="absolute inset-0 -z-20 bg-[url('/images/residencial-teclo-cierre.webp')] bg-cover bg-center" />
         <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[#242322]/60" />
 
         <div
           class="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:flex-row lg:items-center lg:justify-between lg:px-12 lg:py-24">
           <div class="max-w-2xl">
             <p class="text-xs font-semibold uppercase tracking-[0.25em] text-[#E1C58B]">
-              Residencial Isabel
+              Residencial Teclo
             </p>
 
             <h2 class="mt-4 font-serif text-3xl leading-tight text-white sm:text-4xl lg:text-5xl">

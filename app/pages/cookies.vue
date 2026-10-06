@@ -3,9 +3,9 @@ import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 useSeoMeta({
-  title: 'Política de cookies | Residencial Isabel',
+  title: 'Política de cookies | Residencial Teclo',
   description:
-    'Información sobre el uso de cookies y tecnologías similares en la web de Residencial Isabel.',
+    'Información sobre el uso de cookies y tecnologías similares en la web de Residencial Teclo.',
 })
 
 const sections = [
@@ -73,7 +73,7 @@ const sections = [
             </div>
 
             <div class="mt-5 rounded-xl border border-[#D8CDBB]/70 p-5">
-              <p class="font-serif text-lg">Residencial Isabel</p>
+              <p class="font-serif text-lg">Residencial Teclo</p>
               <p class="mt-2 text-sm leading-6 text-[#7B7163]">
                 Transparencia y claridad en el uso de esta web.
               </p>
@@ -124,7 +124,7 @@ const sections = [
               </h2>
               <div class="mt-5 space-y-4 text-[15px] leading-8 text-[#5F574C]">
                 <p>
-                  La web de Residencial Isabel presenta información sobre el
+                  La web de Residencial Teclo presenta información sobre el
                   proyecto y puede incluir un formulario de encuesta para
                   conocer las preferencias de las personas interesadas.
                 </p>

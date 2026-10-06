@@ -3,9 +3,9 @@ import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 useSeoMeta({
-  title: 'Política de privacidad | Residencial Isabel',
+  title: 'Política de privacidad | Residencial Teclo',
   description:
-    'Información sobre el tratamiento de datos personales en la web de Residencial Isabel y en su encuesta de preferencias de vivienda.',
+    'Información sobre el tratamiento de datos personales en la web de Residencial Teclo y en su encuesta de preferencias de vivienda.',
 })
 
 const sections = [
@@ -506,7 +506,7 @@ const sections = [
           <NuxtLink to="/" class="inline-flex items-center gap-2 text-sm font-medium
                    text-[#94784D] transition hover:text-[#725A34]">
             <span aria-hidden="true">←</span>
-            Volver a Residencial Isabel
+            Volver a Residencial Teclo
           </NuxtLink>
         </div>
       </article>

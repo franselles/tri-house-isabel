@@ -3,9 +3,9 @@ import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 useSeoMeta({
-  title: 'Aviso legal | Residencial Isabel',
+  title: 'Aviso legal | Residencial Teclo',
   description:
-    'Aviso legal y condiciones de uso de la web informativa de Residencial Isabel.',
+    'Aviso legal y condiciones de uso de la web informativa de Residencial Teclo.',
 })
 
 const sections = [
@@ -46,7 +46,7 @@ const sections = [
           <p class="mt-6 max-w-2xl text-base leading-8 text-[#625C53] sm:text-lg">
             En esta página encontrarás la información sobre la titularidad,
             las condiciones de uso y los aspectos legales relacionados con
-            esta web de Residencial Isabel.
+            esta web de Residencial Teclo.
           </p>
 
           <p class="mt-4 text-sm text-[#777168]">
@@ -81,7 +81,7 @@ const sections = [
 
         <div class="mt-5 rounded-xl bg-[#EDE5D9]/70 p-5">
           <p class="font-serif text-lg text-[#332D25]">
-            Residencial Isabel
+            Residencial Teclo
           </p>
           <p class="mt-2 text-sm leading-6 text-[#625C53]">
             Una iniciativa residencial en fase inicial de estudio.
@@ -175,7 +175,7 @@ const sections = [
 
           <p class="mt-5 leading-7 text-[#625C53]">
             Esta web tiene una finalidad informativa y permite conocer la
-            iniciativa denominada Residencial Isabel, así como participar,
+            iniciativa denominada Residencial Teclo, así como participar,
             en su caso, en una encuesta orientada a conocer las preferencias
             de posibles interesados en una futura promoción residencial.
           </p>
@@ -234,7 +234,7 @@ const sections = [
             </p>
 
             <p class="mt-3 leading-7 text-[#625C53]">
-              Residencial Isabel se encuentra en una fase inicial de estudio.
+              Residencial Teclo se encuentra en una fase inicial de estudio.
               La información publicada tiene carácter orientativo y puede
               cambiar a medida que avance la definición del proyecto.
             </p>
@@ -383,7 +383,7 @@ const sections = [
           <NuxtLink to="/" class="inline-flex items-center gap-2 text-sm font-medium
                    text-[#94784D] transition hover:text-[#725A34]">
             <span aria-hidden="true">←</span>
-            Volver a Residencial Isabel
+            Volver a Residencial Teclo
           </NuxtLink>
         </div>
       </article>
