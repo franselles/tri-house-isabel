@@ -15,6 +15,6 @@ export default defineNuxtConfig({
     googleServiceAccountEmail: '',
     googlePrivateKey: '',
     googleSpreadsheetId: '',
-    googleSpreadsheetRange: 'Respuestas!A:H',
+    googleSpreadsheetRange: 'Respuestas!A:I',
   },
 })

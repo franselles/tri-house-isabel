@@ -8,6 +8,7 @@ type SurveyBody = {
   storage?: boolean | string
   name?: string
   email?: string
+  phone?: string
   wantsUpdates?: boolean
 }
 
@@ -53,8 +54,11 @@ export default defineEventHandler(async (event) => {
   const email = typeof body.email === 'string'
     ? body.email.trim().toLowerCase()
     : ''
+  const phone = typeof body.phone === 'string'
+    ? body.phone.trim()
+    : ''
 
-  if (name.length > 150 || email.length > 254) {
+  if (name.length > 150 || email.length > 254 || phone.length > 30) {
     throw createError({
       statusCode: 400,
       statusMessage: 'Error interno',      
@@ -70,12 +74,25 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  if (wantsUpdates && (!name || !email)) {
+  const phoneDigits = phone.replace(/\D/g, '')
+
+  if (
+    phone &&
+    (!/^[+\d\s().-]{7,30}$/.test(phone) || phoneDigits.length < 7 || phoneDigits.length > 15)
+  ) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Error interno',
+      message: 'El teléfono no tiene un formato válido.',
+    })
+  }
+
+  if (wantsUpdates && (!name || !email || !phone)) {
     throw createError({
       statusCode: 400,
       statusMessage: 'Error interno',
       message:
-        'Indica tu nombre y email si quieres recibir novedades.',
+        'Indica tu nombre, email y teléfono si quieres recibir novedades.',
     })
   }
 
@@ -114,7 +131,7 @@ export default defineEventHandler(async (event) => {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: config.googleSpreadsheetId,
-      range: config.googleSpreadsheetRange || 'Respuestas!A:H',
+      range: config.googleSpreadsheetRange || 'Respuestas!A:I',
       valueInputOption: 'RAW',
       insertDataOption: 'INSERT_ROWS',
       requestBody: {
@@ -126,6 +143,7 @@ export default defineEventHandler(async (event) => {
           storage,
           name,
           email,
+          phone,
           wantsUpdates,
         ]],
       },

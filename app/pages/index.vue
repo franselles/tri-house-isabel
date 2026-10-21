@@ -2,7 +2,7 @@
 import { computed, reactive, ref } from 'vue'
 
 useSeoMeta({
-  title: 'Residencial Teclo | Encuesta de preferencias',
+  title: 'Residencial en proyecto | Encuesta de preferencias',
   description:
     'Ayúdanos a conocer tus preferencias para un futuro proyecto residencial.',
 })
@@ -14,6 +14,7 @@ const form = reactive({
   storage: true,
   name: '',
   email: '',
+  phone: '',
   wantsUpdates: false,
 })
 
@@ -25,10 +26,19 @@ const emailIsValid = computed(() =>
   /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim()),
 )
 
+const phoneIsValid = computed(() => {
+  const phone = form.phone.trim()
+  const phoneDigits = phone.replace(/\D/g, '')
+
+  return /^[+\d\s().-]{7,30}$/.test(phone)
+    && phoneDigits.length >= 7
+    && phoneDigits.length <= 15
+})
+
 const canSubmit = computed(() => {
   const contactIsValid =
     !form.wantsUpdates ||
-    (form.name.trim().length > 0 && emailIsValid.value)
+    (form.name.trim().length > 0 && emailIsValid.value && phoneIsValid.value)
 
   return contactIsValid && !submitting.value
 })
@@ -50,6 +60,7 @@ async function submitSurvey() {
         storage: form.storage,
         name: form.wantsUpdates ? form.name.trim() : '',
         email: form.wantsUpdates ? form.email.trim() : '',
+        phone: form.wantsUpdates ? form.phone.trim() : '',
         wantsUpdates: form.wantsUpdates,
       },
     })
@@ -111,7 +122,7 @@ const amenities = [
             <h1 class="font-serif text-5xl leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
               Residencial
               <span class="mt-1 block italic text-[#94784D]">
-                Teclo
+               en Proyecto 
               </span>
             </h1>
 
@@ -254,7 +265,7 @@ const amenities = [
                     <span class="mt-1 block text-xs leading-5 text-[#706B63]">
                       Opcional. Marca esta casilla si deseas que contactemos
                       contigo para enviarte información sobre la evolución
-                      de Residencial Teclo.
+                      de Residencial en Proyecto.
                     </span>
                   </span>
                 </label>
@@ -275,6 +286,15 @@ const amenities = [
                     </label>
                     <input id="survey-email" v-model="form.email" type="email" name="email" autocomplete="email"
                       inputmode="email" maxlength="254" required placeholder="tu@email.com"
+                      class="min-h-12 w-full rounded-md border border-[#D9D2C7] bg-white/60 px-3.5 text-sm outline-none transition placeholder:text-[#8B857C] focus:border-[#AA8D58] focus:ring-2 focus:ring-[#AA8D58]/20" />
+                  </div>
+
+                  <div>
+                    <label for="survey-phone" class="mb-1.5 block text-sm font-medium">
+                      Teléfono
+                    </label>
+                    <input id="survey-phone" v-model="form.phone" type="tel" name="phone" autocomplete="tel"
+                      inputmode="tel" maxlength="30" required placeholder="600 000 000"
                       class="min-h-12 w-full rounded-md border border-[#D9D2C7] bg-white/60 px-3.5 text-sm outline-none transition placeholder:text-[#8B857C] focus:border-[#AA8D58] focus:ring-2 focus:ring-[#AA8D58]/20" />
                   </div>
 
@@ -456,7 +476,7 @@ const amenities = [
           class="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:flex-row lg:items-center lg:justify-between lg:px-12 lg:py-24">
           <div class="max-w-2xl">
             <p class="text-xs font-semibold uppercase tracking-[0.25em] text-[#E1C58B]">
-              Residencial Teclo
+              Residencial en Proyecto 
             </p>
 
             <h2 class="mt-4 font-serif text-3xl leading-tight text-white sm:text-4xl lg:text-5xl">

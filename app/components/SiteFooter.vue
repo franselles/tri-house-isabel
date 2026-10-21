@@ -14,8 +14,8 @@ const legalLinks = [
       <div class="grid gap-9 md:grid-cols-[1.3fr_1fr] md:items-start md:gap-12">
         <!-- Marca y descripción -->
         <div class="max-w-lg">
-          <NuxtLink to="/" class="inline-flex items-center" aria-label="Residencial Teclo — página de inicio">
-            <img src="/images/residencial-teclo-logo.webp" alt="Residencial Teclo"
+          <NuxtLink to="/" class="inline-flex items-center" aria-label="Residencial en Proyecto — página de inicio">
+            <img src="/images/residencial-teclo-logo.webp" alt="Residencial en Proyecto"
               class="h-12 w-auto object-contain" />
           </NuxtLink>
 
@@ -51,7 +51,7 @@ const legalLinks = [
       <!-- Pie inferior -->
       <div class="flex flex-col gap-3 text-xs leading-5 text-[#81796E] sm:flex-row sm:items-center sm:justify-between">
         <p>
-          © {{ currentYear }} Residencial Teclo. Todos los derechos reservados. v0.0.4
+          © {{ currentYear }} Residencial en Proyecto. Todos los derechos reservados. v0.0.5
         </p>
 
         <NuxtLink to="/" class="w-fit transition-colors hover:text-[#94784D]">

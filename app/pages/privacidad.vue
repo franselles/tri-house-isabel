@@ -3,9 +3,9 @@ import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 useSeoMeta({
-  title: 'Política de privacidad | Residencial Teclo',
+  title: 'Política de privacidad | Residencial en proyecto',
   description:
-    'Información sobre el tratamiento de datos personales en la web de Residencial Teclo y en su encuesta de preferencias de vivienda.',
+    'Información sobre el tratamiento de datos personales en la web de Residencial en proyecto y en su encuesta de preferencias de vivienda.',
 })
 
 const sections = [
@@ -185,8 +185,8 @@ const sections = [
                   Datos de contacto
                 </h3>
                 <p class="mt-1 leading-7 text-[#625C53]">
-                  Nombre y correo electrónico, cuando los facilites para
-                  solicitar información o recibir novedades del proyecto.
+                  Nombre, correo electrónico y teléfono, cuando los facilites
+                  para solicitar información o recibir novedades del proyecto.
                 </p>
               </div>
             </li>
@@ -244,9 +244,9 @@ const sections = [
                 Contactar contigo
               </h3>
               <p class="mt-1 leading-7 text-[#625C53]">
-                Utilizar el nombre y el correo electrónico para responder a
-                consultas o enviar información sobre el proyecto cuando
-                corresponda y exista una base jurídica válida para ello.
+                Utilizar el nombre, el correo electrónico y el teléfono para
+                responder a consultas o enviar información sobre el proyecto
+                cuando corresponda y exista una base jurídica válida para ello.
               </p>
             </div>
 
@@ -506,7 +506,7 @@ const sections = [
           <NuxtLink to="/" class="inline-flex items-center gap-2 text-sm font-medium
                    text-[#94784D] transition hover:text-[#725A34]">
             <span aria-hidden="true">←</span>
-            Volver a Residencial Teclo
+            Volver a Residencial en Proyecto 
           </NuxtLink>
         </div>
       </article>

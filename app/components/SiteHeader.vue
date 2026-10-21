@@ -26,7 +26,7 @@ const legalLinks = [
     <div class="mx-auto flex max-w-7xl items-center justify-between
              gap-4 px-5 py-3 sm:px-8 sm:py-4 lg:px-10">
       <!-- Marca -->
-      <NuxtLink to="/" class="flex min-w-0 shrink items-center gap-3" aria-label="Residencial Teclo, inicio"
+      <NuxtLink to="/" class="flex min-w-0 shrink items-center gap-3" aria-label="Residencial en Proyecto, inicio"
         @click="menuOpen = false">
         <img src="/images/residencial-teclo-logo.webp" alt=""
           class="h-12 w-12 shrink-0 object-contain sm:h-14 sm:w-14" />
@@ -34,7 +34,7 @@ const legalLinks = [
         <span class="flex min-w-0 flex-col">
           <span class="whitespace-nowrap font-serif text-base
                    leading-tight tracking-tight sm:text-xl">
-            Residencial Teclo
+            Residencial en Proyecto
           </span>
 
           <span class="mt-1 text-[10px] italic tracking-[0.12em]
