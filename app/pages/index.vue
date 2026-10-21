@@ -122,7 +122,7 @@ const amenities = [
             <h1 class="font-serif text-5xl leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
               Residencial
               <span class="mt-1 block italic text-[#94784D]">
-               en Proyecto 
+               en proyecto 
               </span>
             </h1>
 

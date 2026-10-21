@@ -32,9 +32,9 @@ const legalLinks = [
           class="h-12 w-12 shrink-0 object-contain sm:h-14 sm:w-14" />
 
         <span class="flex min-w-0 flex-col">
-          <span class="whitespace-nowrap font-serif text-base
+          <span class="font-serif text-base
                    leading-tight tracking-tight sm:text-xl">
-            Residencial en Proyecto
+            Residencial en<span class="sm:hidden"><br /></span><span class="hidden sm:inline"> </span> proyecto
           </span>
 
           <span class="mt-1 text-[10px] italic tracking-[0.12em]
