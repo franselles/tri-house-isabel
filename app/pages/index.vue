@@ -43,6 +43,17 @@ const canSubmit = computed(() => {
   return contactIsValid && !submitting.value
 })
 
+const getInitialForm = () => ({
+  bedrooms: 3,
+  bathrooms: 2,
+  garageSpaces: 1,
+  storage: true,
+  name: '',
+  email: '',
+  phone: '',
+  wantsUpdates: false,
+});
+
 async function submitSurvey() {
   if (!canSubmit.value) return
 
@@ -67,16 +78,8 @@ async function submitSurvey() {
 
     submitted.value = true
 
-    Object.assign(form, {
-      bedrooms: 3,
-      bathrooms: 2,
-      garageSpaces: 1,
-      storage: true,
-      name: '',
-      email: '',
-      phone: '',
-      wantsUpdates: false,
-    })
+    Object.assign(form, getInitialForm())
+
   } catch {
     errorMessage.value =
       'No hemos podido enviar tu respuesta. Inténtalo de nuevo dentro de unos minutos.'

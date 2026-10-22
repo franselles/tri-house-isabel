@@ -51,7 +51,7 @@ const legalLinks = [
       <!-- Pie inferior -->
       <div class="flex flex-col gap-3 text-xs leading-5 text-[#81796E] sm:flex-row sm:items-center sm:justify-between">
         <p>
-          © {{ currentYear }} Los Carriones S.L. Todos los derechos reservados. v0.0.8
+          © {{ currentYear }} Los Carriones S.L. Todos los derechos reservados. v0.0.9
         </p>
 
         <NuxtLink to="/" class="w-fit transition-colors hover:text-[#94784D]">
