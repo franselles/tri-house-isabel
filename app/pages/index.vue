@@ -66,6 +66,17 @@ async function submitSurvey() {
     })
 
     submitted.value = true
+
+    Object.assign(form, {
+      bedrooms: 3,
+      bathrooms: 2,
+      garageSpaces: 1,
+      storage: true,
+      name: '',
+      email: '',
+      phone: '',
+      wantsUpdates: false,
+    })
   } catch {
     errorMessage.value =
       'No hemos podido enviar tu respuesta. Inténtalo de nuevo dentro de unos minutos.'
