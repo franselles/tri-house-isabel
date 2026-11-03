@@ -50,7 +50,7 @@ const sections = [
           </p>
 
           <p class="mt-4 text-sm text-[#777168]">
-            Última actualización: 2 de octubre de 2026
+            Última actualización: 3 de noviembre de 2026
           </p>
         </div>
       </div>
@@ -121,7 +121,7 @@ const sections = [
 
               <div>
                 <dt class="font-semibold text-[#332D25]">
-                  NIF o CIF
+                  NIF
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
                   B-03318383
