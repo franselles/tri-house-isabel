@@ -115,7 +115,7 @@ const sections = [
                   Titular
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Nombre y apellidos o denominación social]
+                  Los Carriones, S.L.
                 </dd>
               </div>
 
@@ -124,7 +124,7 @@ const sections = [
                   NIF o CIF
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [NIF o CIF correspondiente]
+                  B-03318383
                 </dd>
               </div>
 
@@ -133,7 +133,7 @@ const sections = [
                   Domicilio
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Domicilio a efectos legales]
+                  Calle Lepanto, 18. Plt. Bj. 15. Edif. Provima. -03503- Benidorm (Alicante)
                 </dd>
               </div>
 
@@ -142,25 +142,11 @@ const sections = [
                   Correo electrónico
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Correo electrónico de contacto]
-                </dd>
-              </div>
-
-              <div>
-                <dt class="font-semibold text-[#332D25]">
-                  Datos registrales
-                </dt>
-                <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Datos de inscripción registral, si corresponde]
+                  pedro@gruporoman.es
                 </dd>
               </div>
             </dl>
           </div>
-
-          <p class="mt-4 text-sm leading-6 text-[#777168]">
-            Los campos anteriores deben completarse con los datos reales del
-            titular. Los datos registrales se incluirán cuando sean aplicables.
-          </p>
         </section>
 
         <!-- 02 Objeto -->

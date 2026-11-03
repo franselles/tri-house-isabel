@@ -112,7 +112,7 @@ const sections = [
                   Responsable
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Nombre y apellidos o denominación social]
+                  Los Carriones, S.L.
                 </dd>
               </div>
 
@@ -121,7 +121,7 @@ const sections = [
                   NIF o CIF
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [NIF o CIF correspondiente]
+                  B-03318383
                 </dd>
               </div>
 
@@ -130,7 +130,7 @@ const sections = [
                   Domicilio
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Domicilio a efectos legales]
+                  Calle Lepanto, 18. Plt. Bj. 15. Edif. Provima. -03503- Benidorm (Alicante)
                 </dd>
               </div>
 
@@ -139,16 +139,11 @@ const sections = [
                   Correo electrónico de contacto
                 </dt>
                 <dd class="mt-1 leading-6 text-[#625C53]">
-                  [Correo electrónico habilitado para consultas de privacidad]
+                  pedro@gruporoman.es
                 </dd>
               </div>
             </dl>
           </div>
-
-          <p class="mt-4 text-sm leading-6 text-[#777168]">
-            Estos datos deben completarse con la identidad y los datos reales
-            de la persona o entidad responsable antes de publicar la página.
-          </p>
         </section>
 
         <section id="datos" class="scroll-mt-28 border-b border-[#D8CDBB] pb-9">
