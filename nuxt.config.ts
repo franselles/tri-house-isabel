@@ -16,5 +16,11 @@ export default defineNuxtConfig({
     googlePrivateKey: '',
     googleSpreadsheetId: '',
     googleSpreadsheetRange: 'Respuestas!A:I',
+    smtpHost: '',
+    smtpPort: 587,
+    smtpSecure: false,
+    smtpUser: '',
+    smtpPass: '',
+    smtpFrom: '',
   },
 })

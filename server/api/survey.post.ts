@@ -1,5 +1,7 @@
 
 import { google } from 'googleapis'
+import { buildSurveyThankYouEmail } from '../lib/email-templates'
+import { sendEmail } from '../lib/mail'
 
 type SurveyBody = {
   bedrooms?: number | string
@@ -148,6 +150,21 @@ export default defineEventHandler(async (event) => {
         ]],
       },
     })
+
+    if (wantsUpdates && email) {
+      try {
+        const message = buildSurveyThankYouEmail({
+          to: email,
+          name,
+          baseUrl: getRequestURL(event).origin,
+        })
+
+        await sendEmail(message)
+      } catch (error) {
+        // El registro ya se guardó; un fallo de correo no debe perder la encuesta.
+        console.error('Error al enviar el correo de agradecimiento:', error)
+      }
+    }
 
     return {
       success: true,
